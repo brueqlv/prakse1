@@ -1,80 +1,69 @@
-:root {
-    --font-1: Montserrat;
-    --font-2: Oswald;
-    --background-color-one: #2f4858;
-    --background-color-two: #ffcb66;
-    --background-color-three: #FFF;
-    --button-color: #ffa800;
-    --button-color-hover: #ffc043;
-    --font-color-one: #fff;
-    --font-color-two: #2f4858;
-    --font-color-three: #ffa800;
-    --icon-color-one: #000000;
-  }
-  
-  @font-face {
-    font-family: Montserrat;
-    src: url(../../../webpack/src/fonts/Montserrat-VariableFont_wght.ttf);
-  }
-  @font-face {
-    font-family: Oswald;
-    src: url(../../../webpack/src/fonts/Oswald-VariableFont_wght.ttf);
-  }
-  main .orange-container {
-    position: relative;
-    width: 100%;
-    max-width: 1366px;
-    margin-top: 130px;
-  }
-  main .orange-container .background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("../../../webpack/src/img/OrangeUnion.svg");
-    background-size: cover;
-    z-index: 1;
-  }
-  main .orange-container .content {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  main .orange-container .content .img-container1 {
-    position: relative;
-    margin-top: 70px;
-    max-width: 370px;
-  }
-  main .orange-container .content p {
-    font: 500 24px/30px var(--font-1);
-    text-align: center;
-    color: var(--font-color-one);
-    max-width: 818px;
-    margin: 35px 0 100px 0;
-  }
-  @media (max-width: 991px) {
-    main .orange-container .content p {
-      width: 80%;
-    }
+@import '../../../webpack/src/scss/variables.css';
+
+main .orange-container {
+  position: relative;
+  width: 100%;
+  max-width: 1366px;
+  margin-top: 130px;
 }
+
+main .orange-container .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../webpack/src/img/OrangeUnion.svg");
+  background-size: cover;
+  z-index: 1;
+}
+
+main .orange-container .content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .orange-container .content .img-container1 {
+  position: relative;
+  margin-top: 70px;
+  max-width: 370px;
+}
+
+main .orange-container .content p {
+  font: 500 24px/30px var(--font-1);
+  text-align: center;
+  color: var(--font-color-one);
+  max-width: 818px;
+  margin: 35px 0 100px 0;
+}
+
+@media (max-width: 991px) {
+  main .orange-container .content p {
+    width: 80%;
+  }
+}
+
 @media (max-width: 660px) {
-    main .orange-container {
-      margin-top: 85px;
-    }
-    main .orange-container .content .img-container1 {
-      margin-top: 92px;
-    }
-    main .orange-container .content .img-container1 img {
-      height: 190px;
-      width: auto;
-    }
-    main .orange-container .content p {
-      font-size: 18px;
-      line-height: 22px;
-      margin-top: 25px;
-      width: 88%;
-    }
+  main .orange-container {
+    margin-top: 85px;
+  }
+
+  main .orange-container .content .img-container1 {
+    margin-top: 92px;
+  }
+
+  main .orange-container .content .img-container1 img {
+    height: 190px;
+    width: auto;
+  }
+
+  main .orange-container .content p {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 25px;
+    width: 88%;
+  }
 }

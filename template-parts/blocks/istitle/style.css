@@ -1,61 +1,48 @@
-:root {
-    --font-1: Montserrat;
-    --font-2: Oswald;
-    --background-color-one: #2f4858;
-    --background-color-two: #ffcb66;
-    --background-color-three: #FFF;
-    --button-color: #ffa800;
-    --button-color-hover: #ffc043;
-    --font-color-one: #fff;
-    --font-color-two: #2f4858;
-    --font-color-three: #ffa800;
-    --icon-color-one: #000000;
-  }
-  
-  @font-face {
-    font-family: Montserrat;
-    src: url(../../../webpack/src/fonts/Montserrat-VariableFont_wght.ttf);
-  }
-  @font-face {
-    font-family: Oswald;
-    src: url(../../../webpack/src/fonts/Oswald-VariableFont_wght.ttf);
-  }
-  main .text-container {
-    margin-top: 172px;
-  }
-  main .text-container h1 {
-    font: 500 48px/71px var(--font-2);
-    text-align: center;
-    letter-spacing: 0;
-    color: var(--font-color-two);
-  }
-  main .text-container p {
-    font: 500 24px/30px var(--font-1);
-    text-align: center;
-    color: var(--font-color-two);
-    max-width: 816px;
-    margin-top: 60px;
-  }
-  @media (max-width: 991px) {
-    main .text-container {
-      max-width: 80%;
-      margin-top: 135px;
-    }
-    main .text-container p {
-      margin-top: 50px;
-    }
+@import '../../../webpack/src/scss/variables.css';
+
+main .text-container {
+  margin-top: 172px;
 }
+
+main .text-container h1 {
+  font: 500 48px/71px var(--font-2);
+  text-align: center;
+  letter-spacing: 0;
+  color: var(--font-color-two);
+}
+
+main .text-container p {
+  font: 500 24px/30px var(--font-1);
+  text-align: center;
+  color: var(--font-color-two);
+  max-width: 816px;
+  margin-top: 60px;
+}
+
+@media (max-width: 991px) {
+  main .text-container {
+    max-width: 80%;
+    margin-top: 135px;
+  }
+
+  main .text-container p {
+    margin-top: 50px;
+  }
+}
+
 @media (max-width: 660px) {
-    main .text-container {
-        margin-top: 59px;
-      }
-      main .text-container h1 {
-        font-size: 36px;
-        line-height: 54px;
-      }
-      main .text-container p {
-        font-size: 18px;
-        line-height: 22px;
-        margin-top: 55px;
-      }
+  main .text-container {
+    margin-top: 59px;
+  }
+
+  main .text-container h1 {
+    font-size: 36px;
+    line-height: 54px;
+  }
+
+  main .text-container p {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 55px;
+  }
 }

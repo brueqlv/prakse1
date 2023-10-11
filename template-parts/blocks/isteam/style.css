@@ -1,139 +1,137 @@
-:root {
-    --font-1: Montserrat;
-    --font-2: Oswald;
-    --background-color-one: #2f4858;
-    --background-color-two: #ffcb66;
-    --background-color-three: #FFF;
-    --button-color: #ffa800;
-    --button-color-hover: #ffc043;
-    --font-color-one: #fff;
-    --font-color-two: #2f4858;
-    --font-color-three: #ffa800;
-    --icon-color-one: #000000;
-  }
-  
-  @font-face {
-    font-family: Montserrat;
-    src: url(../../../webpack/src/fonts/Montserrat-VariableFont_wght.ttf);
-  }
-  @font-face {
-    font-family: Oswald;
-    src: url(../../../webpack/src/fonts/Oswald-VariableFont_wght.ttf);
-  }
+@import '../../../webpack/src/scss/variables.css';
+
+main .sparkle-team-container {
+  margin-top: 147px;
+  max-width: 1033px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+main .sparkle-team-container h2 {
+  margin: 0;
+  font: 500 30px/44px var(--font-2);
+  text-align: center;
+  color: var(--font-color-two);
+}
+
+main .sparkle-team-container p {
+  margin-top: 20px;
+  font: 500 18px/22px var(--font-1);
+  text-align: center;
+  color: var(--font-color-two);
+  max-width: 606px;
+}
+
+main .sparkle-team-container .image-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 63px;
+  margin-bottom: 181px;
+}
+
+main .sparkle-team-container .image-container .small-container {
+  position: relative;
+  overflow: hidden;
+  width: 289px;
+  height: 365px;
+}
+
+main .sparkle-team-container .image-container .small-container div {
+  position: absolute;
+  text-align: center;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+}
+
+main .sparkle-team-container .image-container .small-container div h5 {
+  font: 500 24px/36px var(--font-2);
+  color: var(--font-color-one);
+  margin: 0 10px 0 0;
+}
+
+main .sparkle-team-container .image-container .small-container div p {
+  font: 500 18px/22px var(--font-1);
+  text-align: center;
+  color: var(--font-color-one);
+  margin: 0 0 20px 0;
+  padding: 0 7px;
+}
+
+main .sparkle-team-container .image-container .small-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(47, 72, 88, 0.8) 18.63%, rgba(47, 72, 88, 0) 49.21%);
+  pointer-events: none;
+}
+
+@media (max-width: 991px) {
   main .sparkle-team-container {
-    margin-top: 147px;
-    max-width: 1033px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    margin-top: 142px;
   }
-  main .sparkle-team-container h2 {
-    margin: 0;
-    font: 500 30px/44px var(--font-2);
-    text-align: center;
-    color: var(--font-color-two);
-  }
-  main .sparkle-team-container p {
-    margin-top: 20px;
-    font: 500 18px/22px var(--font-1);
-    text-align: center;
-    color: var(--font-color-two);
-    max-width: 606px;
-  }
+
   main .sparkle-team-container .image-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 63px;
-    margin-bottom: 181px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 94px;
+    gap: 20px;
   }
+
   main .sparkle-team-container .image-container .small-container {
-    position: relative;
-    overflow: hidden;
-    width: 289px;
-    height: 365px;
+    width: 352px;
+    height: 443px;
   }
-  main .sparkle-team-container .image-container .small-container div {
-    position: absolute;
-    text-align: center;
-    bottom: 0px;
-    left: 0px;
-    z-index: 1;
-    text-align: center;
-    width: 100%;
-  }
-  main .sparkle-team-container .image-container .small-container div h5 {
-    font: 500 24px/36px var(--font-2);
-    color: var(--font-color-one);
-    margin: 0 10px 0 0;
-  }
-  main .sparkle-team-container .image-container .small-container div p {
-    font: 500 18px/22px var(--font-1);
-    text-align: center;
-    color: var(--font-color-one);
-    margin: 0 0 20px 0;
-    padding: 0 7px;
-  }
-  main .sparkle-team-container .image-container .small-container::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+
+  main .sparkle-team-container .image-container .small-container img {
     height: 100%;
-    background: linear-gradient(0deg, rgba(47, 72, 88, 0.8) 18.63%, rgba(47, 72, 88, 0) 49.21%);
-    pointer-events: none;
+    width: 100%;
   }
-  
-  @media (max-width: 991px) {
-    main .sparkle-team-container {
-      margin-top: 142px;
-    }
-    main .sparkle-team-container .image-container {
-      flex-direction: column;
-      align-items: center;
-      margin-top: 94px;
-      gap: 20px;
-    }
-    main .sparkle-team-container .image-container .small-container {
-      width: 352px;
-      height: 443px;
-    }
-    main .sparkle-team-container .image-container .small-container img {
-      height: 100%;
-      width: 100%;
-    }
+}
+
+@media (max-width: 660px) {
+  main .sparkle-team-container {
+    margin-top: 138px;
   }
-  @media (max-width: 660px) {
-    main .sparkle-team-container {
-      margin-top: 138px;
-    }
-    main .sparkle-team-container h2 {
-      font-size: 24px;
-      line-height: 36px;
-    }
-    main .sparkle-team-container p {
-      font-size: 14px;
-      line-height: 17px;
-      margin-top: 29px;
-    }
-    main .sparkle-team-container .image-container {
-      margin-top: 80px;
-      margin-bottom: 121px;
-      gap: 24px;
-    }
-    main .sparkle-team-container .image-container .small-container {
-      max-width: 280px;
-      height: 354px;
-    }
-    main .sparkle-team-container .image-container .small-container div h5 {
-      font-size: 18px;
-      line-height: 27px;
-    }
-    main .sparkle-team-container .image-container .small-container div p {
-      font-size: 14px;
-      line-height: 17px;
-    }
+
+  main .sparkle-team-container h2 {
+    font-size: 24px;
+    line-height: 36px;
   }
+
+  main .sparkle-team-container p {
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 29px;
+  }
+
+  main .sparkle-team-container .image-container {
+    margin-top: 80px;
+    margin-bottom: 121px;
+    gap: 24px;
+  }
+
+  main .sparkle-team-container .image-container .small-container {
+    max-width: 280px;
+    height: 354px;
+  }
+
+  main .sparkle-team-container .image-container .small-container div h5 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  main .sparkle-team-container .image-container .small-container div p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

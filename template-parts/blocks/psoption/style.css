@@ -1,0 +1,165 @@
+:root {
+    --font-1: Montserrat;
+    --font-2: Oswald;
+    --background-color-one: #2f4858;
+    --background-color-two: #ffcb66;
+    --background-color-three: #FFF;
+    --button-color: #ffa800;
+    --button-color-hover: #ffc043;
+    --font-color-one: #fff;
+    --font-color-two: #2f4858;
+    --font-color-three: #ffa800;
+    --icon-color-one: #000000;
+  }
+  
+  @font-face {
+    font-family: Montserrat;
+    src: url(../../../webpack/src/fonts/Montserrat-VariableFont_wght.ttf);
+  }
+  @font-face {
+    font-family: Oswald;
+    src: url(../../../webpack/src/fonts/Oswald-VariableFont_wght.ttf);
+  }
+  main .option-container {
+    margin: 75px 0 150px 0;
+    padding: 0 90px;
+    max-width: 1366px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+  }
+  main .option-container .option-inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 394px;
+  }
+  main .option-container .option-inner-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .option-container .option-inner-container div div {
+    width: 166.12px;
+    height: 192px;
+    position: relative;
+  }
+  main .option-container .option-inner-container div div .stars-left {
+    position: absolute;
+    top: -5px;
+    left: -7px;
+    transform: rotateY(180deg);
+  }
+  main .option-container .option-inner-container div div .object-left {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  main .option-container .option-inner-container div div .stars-right {
+    position: absolute;
+    top: -5px;
+    right: -7px;
+  }
+  main .option-container .option-inner-container div div .object-right {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  main .option-container .option-inner-container div h3 {
+    font: 500 30px/44px var(--font-2);
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--font-color-two);
+    margin: 53px 0 20px 0;
+  }
+  main .option-container .option-inner-container div p {
+    font: 400 18px/22px var(--font-1);
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--font-color-two);
+    margin: 0;
+  }
+  main .option-container .option-inner-container button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    background-color: var(--button-color);
+    color: var(--font-color-one);
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    width: 233px;
+    height: 50px;
+    border-radius: 25px;
+    font: 18px/22px var(--font-1);
+    margin-top: 50px;
+  }
+  main .option-container .option-inner-container button:hover, main .option-container .option-inner-container button:focus {
+    background-color: var(--button-color-hover);
+  }
+  main .option-container .left {
+    margin-right: 40px;
+  }
+  main .option-container .right {
+    margin-left: 40px;
+  }
+  @media (max-width: 991px) {
+    main .option-container {
+      margin: 75px 0 150px 0;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      padding: 0px;
+    }
+    main .option-container .option-inner-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    main .option-container .option-inner-container div h3 {
+      margin: 53px 0 23px 0;
+    }
+    main .option-container .option-inner-container button {
+      margin-top: 55px;
+    }
+    main .option-container .left {
+      margin-right: 0px;
+    }
+    main .option-container .right {
+      margin-left: 0px;
+    }
+    main .option-container .left {
+      margin-bottom: 160px;
+    }
+}
+@media (max-width: 660px) {
+    main .option-container {
+      margin: 75px 0 120px 0;
+    }
+    main .option-container .option-inner-container div h3 {
+      margin: 28px 0 13px 0;
+      font-size: 18px;
+      line-height: 27px;
+    }
+    main .option-container .option-inner-container div p {
+      font-size: 12px;
+      line-height: 15px;
+    }
+    main .option-container .option-inner-container div div .stars-right {
+      position: absolute;
+      top: 1px;
+      right: -20px;
+    }
+    main .option-container .option-inner-container div div .object-right {
+      position: absolute;
+      bottom: 0;
+      left: 18px;
+    }
+    main .option-container .option-inner-container button {
+      margin-top: 55px;
+    }
+    main .option-container .left {
+      margin-bottom: 75px;
+    }
+}

@@ -1,0 +1,103 @@
+:root {
+    --font-1: Montserrat;
+    --font-2: Oswald;
+    --background-color-one: #2f4858;
+    --background-color-two: #ffcb66;
+    --background-color-three: #FFF;
+    --button-color: #ffa800;
+    --button-color-hover: #ffc043;
+    --font-color-one: #fff;
+    --font-color-two: #2f4858;
+    --font-color-three: #ffa800;
+    --icon-color-one: #000000;
+  }
+  
+  @font-face {
+    font-family: Montserrat;
+    src: url(../../../webpack/src/fonts/Montserrat-VariableFont_wght.ttf);
+  }
+  @font-face {
+    font-family: Oswald;
+    src: url(../../../webpack/src/fonts/Oswald-VariableFont_wght.ttf);
+  }
+  main .partners-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 162px;
+    margin-top: 150px;
+    align-items: center;
+    width: 100%;
+    background: var(--background-color-two);
+  }
+  main .partners-container .wavy-top {
+    position: absolute;
+    top: -90px;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    background: url(../../../webpack/src/img/Union.svg) repeat-x;
+  }
+  main .partners-container h2 {
+    margin-top: 100px;
+    margin-bottom: 63px;
+    font: 500 24px/36px var(--font-2);
+    text-align: center;
+    color: var(--font-color-two);
+  }
+  main .partners-container .partners-container-inner {
+    width: 100%;
+    max-width: 1366px;
+    box-sizing: border-box;
+    padding: 0 124px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 120px;
+  }
+  main .partners-container .partners-container-inner div {
+    margin: 0 10px;
+  }
+  
+  @media (max-width: 991px) {
+    main .partners-container {
+      margin-top: 105px;
+      padding-bottom: 10px;
+      height: 310px;
+    }
+    main .partners-container .wavy-top {
+      top: -60px;
+    }
+    main .partners-container h2 {
+      margin-top: 100px;
+      margin-bottom: 23px;
+    }
+    main .partners-container .partners-container-inner {
+      padding: 0 55px;
+    }
+    main .partners-container .partners-container-inner div {
+      margin: 0 25px;
+    }
+  }
+  @media (max-width: 660px) {
+    main .partners-container {
+      height: 422px;
+    }
+    main .partners-container h2 {
+      margin-bottom: 58px;
+    }
+    main .partners-container .partners-container-inner {
+      flex-wrap: wrap;
+      padding: 0 15px;
+    }
+    main .partners-container .partners-container-inner div {
+      flex-basis: calc(50% - 15px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 0 25px;
+    }
+    .partners-container-inner img {
+      max-height: 67px;
+    }
+  }

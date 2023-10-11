@@ -1,0 +1,100 @@
+:root {
+    --font-1: Montserrat;
+    --font-2: Oswald;
+    --background-color-one: #2f4858;
+    --background-color-two: #ffcb66;
+    --background-color-three: #FFF;
+    --button-color: #ffa800;
+    --button-color-hover: #ffc043;
+    --font-color-one: #fff;
+    --font-color-two: #2f4858;
+    --font-color-three: #ffa800;
+    --icon-color-one: #000000;
+  }
+  
+  @font-face {
+    font-family: Montserrat;
+    src: url(../../../webpack/src/fonts/Montserrat-VariableFont_wght.ttf);
+  }
+  @font-face {
+    font-family: Oswald;
+    src: url(../../../webpack/src/fonts/Oswald-VariableFont_wght.ttf);
+  }
+  main .option-container {
+    margin: 130px 0 185px 0;
+    padding: 0 90px;
+    max-width: 1366px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  main .option-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+  }
+  main .option-container div button,
+  main .option-container div h3 {
+    font: 500 24px/36px var(--font-2);
+    text-align: center;
+    color: var(--font-color-two);
+  }
+  main .option-container div button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    background-color: var(--button-color);
+    color: var(--font-color-one);
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    width: 233px;
+    height: 50px;
+    border-radius: 25px;
+    font: 18px/22px var(--font-1);
+    margin-top: 20px;
+  }
+  main .option-container div button:hover, main .option-container div button:focus {
+    background-color: var(--button-color-hover);
+  }
+  
+  @media (max-width: 991px) {
+    main .option-container {
+      margin: 93px 0 170px 0;
+      align-items: flex-start;
+      padding: 0;
+    }
+    main .option-container div {
+      min-height: 150px;
+      width: 360px;
+    }
+    main .option-container div h3 {
+      font-size: 18px;
+      line-height: 27px;
+      max-width: 233px;
+      margin-top: 0px;
+    }
+  }
+  @media (max-width: 660px) {
+    main .option-container {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 102px;
+      margin-bottom: 72px;
+    }
+    main .option-container div {
+      justify-content: flex-start;
+      height: 150px;
+      margin-bottom: 60px;
+      width: 90%;
+    }
+    main .option-container div h3 {
+      line-height: 27px;
+      max-width: 100%;
+    }
+    main .option-container div button {
+      margin-top: 30px;
+    }
+  }

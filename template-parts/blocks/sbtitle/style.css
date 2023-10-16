@@ -1,10 +1,10 @@
 @import '../../../webpack/src/scss/variables.css';
 
-main .title-container {
+.title-container {
   margin-top: 172px;
 }
 
-main .title-container h1 {
+.title-container h1 {
   font: 500 48px/71px var(--font-2);
   text-align: center;
   letter-spacing: 0;
@@ -12,17 +12,17 @@ main .title-container h1 {
 }
 
 @media (max-width: 991px) {
-  main .title-container {
+  .title-container {
     margin-top: 135px;
   }
 }
 
 @media (max-width: 660px) {
-  main .title-container {
+  .title-container {
     margin-top: 80px;
   }
 
-  main .title-container h1 {
+  .title-container h1 {
     font-size: 36px;
     line-height: 54px;
   }

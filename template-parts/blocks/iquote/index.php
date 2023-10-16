@@ -1,7 +1,9 @@
 <?php
+//Quote block for page "Ideja"
+
 $quoteContainer = get_field('quote_container');
 ?>
-<main>
+
 <div class="quote-container">
     <div class="quote-container-inner">
         <?php if (have_rows('quote_container')) : ?>
@@ -21,4 +23,3 @@ $quoteContainer = get_field('quote_container');
                 alt="arrow button"></button>
     </div>
 </div>
-</main>

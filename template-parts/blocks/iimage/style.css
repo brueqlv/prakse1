@@ -1,13 +1,14 @@
 @import '../../../webpack/src/scss/variables.css';
 
-main .image-container {
+ .ideja-image-container {
   position: relative;
   overflow: hidden;
   max-width: 1366px;
-  margin-top: 135px;
+  margin-top: 152px;
+  width:100%;
 }
 
-main .image-container .ripped {
+ .ideja-image-container .ripped {
   position: absolute;
   background-color: transparent;
   z-index: 1;
@@ -16,27 +17,27 @@ main .image-container .ripped {
   height: 55px;
 }
 
-main .image-container .top {
+ .ideja-image-container .top {
   top: 0;
   transform: rotateY(180deg);
 }
 
-main .image-container .bottom {
+ .ideja-image-container .bottom {
   bottom: -1px;
 }
 
-main .image-container p {
+ .ideja-image-container p {
   position: absolute;
   font: 500 24px/36px var(--font-2);
   text-align: center;
   color: var(--font-color-one);
-  width: 59%;
-  bottom: 9.5%;
+  width: 60%;
+  bottom: 12%;
   left: 50%;
   transform: translateX(-50%);
 }
 
-main .image-container .cover {
+ .ideja-image-container .cover {
   text-align: center;
   width: 100%;
   max-width: 1366px;
@@ -46,7 +47,7 @@ main .image-container .cover {
   transform: translateX(-50%);
 }
 
-main .image-container::after {
+ .ideja-image-container::after {
   content: "";
   position: absolute;
   top: 0;
@@ -59,30 +60,28 @@ main .image-container::after {
 }
 
 @media (max-width: 991px) {
-  main {
-    text-align: center;
-  }
 
-  main .image-container .cover {
+   .ideja-image-container .cover {
     width: 100%;
+  }
+  .ideja-image-container p {
+    width: 80%;
   }
 }
 
 @media (max-width: 660px) {
-  main .image-container {
-    margin-top: 70px;
+   .ideja-image-container {
+    margin-top: 81px;
   }
-
-  main .image-container p {
+   .ideja-image-container p {
     font-size: 18px;
     line-height: 27px;
-    width: 29.3%;
-    bottom: 10%;
+    width: 87.3%;
+    bottom: 13%;
     transform: translate(-50%, 0);
   }
-
-  main .image-container .cover {
-    left: 39%;
+   .ideja-image-container .cover {
+    left: 17%;
     transform: translateX(-50%);
     min-width: 945px;
   }

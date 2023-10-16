@@ -1,8 +1,9 @@
 $( document ).ready( function() {
     // Scripts executed after user interaction.
+
 //Function for icon that appears when scrolling and when clicked takes to top
 
-window.onscroll = function() {
+window.onscroll = function () {
     scrollFunction();
 };
 
@@ -14,15 +15,13 @@ function scrollFunction() {
     }
 }
 
-
-document.getElementById("scrollToTop").onclick = function() {
+document.getElementById("scrollToTop").onclick = function () {
     scrollToTop();
 };
 
 function scrollToTop() {
-    document.body.scrollTop = 0; 
+    document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
 
-
-} );
+});

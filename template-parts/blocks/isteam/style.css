@@ -1,6 +1,6 @@
 @import '../../../webpack/src/scss/variables.css';
 
-main .sparkle-team-container {
+ .sparkle-team-container {
   margin-top: 147px;
   max-width: 1033px;
   display: flex;
@@ -10,14 +10,14 @@ main .sparkle-team-container {
   width: 100%;
 }
 
-main .sparkle-team-container h2 {
+ .sparkle-team-container h2 {
   margin: 0;
   font: 500 30px/44px var(--font-2);
   text-align: center;
   color: var(--font-color-two);
 }
 
-main .sparkle-team-container p {
+ .sparkle-team-container p {
   margin-top: 20px;
   font: 500 18px/22px var(--font-1);
   text-align: center;
@@ -25,7 +25,7 @@ main .sparkle-team-container p {
   max-width: 606px;
 }
 
-main .sparkle-team-container .image-container {
+ .sparkle-team-container .image-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -33,14 +33,14 @@ main .sparkle-team-container .image-container {
   margin-bottom: 181px;
 }
 
-main .sparkle-team-container .image-container .small-container {
+ .sparkle-team-container .image-container .small-container {
   position: relative;
   overflow: hidden;
   width: 289px;
   height: 365px;
 }
 
-main .sparkle-team-container .image-container .small-container div {
+ .sparkle-team-container .image-container .small-container div {
   position: absolute;
   text-align: center;
   bottom: 0px;
@@ -50,13 +50,13 @@ main .sparkle-team-container .image-container .small-container div {
   width: 100%;
 }
 
-main .sparkle-team-container .image-container .small-container div h5 {
+ .sparkle-team-container .image-container .small-container div h5 {
   font: 500 24px/36px var(--font-2);
   color: var(--font-color-one);
   margin: 0 10px 0 0;
 }
 
-main .sparkle-team-container .image-container .small-container div p {
+ .sparkle-team-container .image-container .small-container div p {
   font: 500 18px/22px var(--font-1);
   text-align: center;
   color: var(--font-color-one);
@@ -64,7 +64,7 @@ main .sparkle-team-container .image-container .small-container div p {
   padding: 0 7px;
 }
 
-main .sparkle-team-container .image-container .small-container::after {
+ .sparkle-team-container .image-container .small-container::after {
   content: "";
   position: absolute;
   top: 0;
@@ -76,61 +76,61 @@ main .sparkle-team-container .image-container .small-container::after {
 }
 
 @media (max-width: 991px) {
-  main .sparkle-team-container {
+   .sparkle-team-container {
     margin-top: 142px;
   }
 
-  main .sparkle-team-container .image-container {
+   .sparkle-team-container .image-container {
     flex-direction: column;
     align-items: center;
     margin-top: 94px;
     gap: 20px;
   }
 
-  main .sparkle-team-container .image-container .small-container {
+   .sparkle-team-container .image-container .small-container {
     width: 352px;
     height: 443px;
   }
 
-  main .sparkle-team-container .image-container .small-container img {
+   .sparkle-team-container .image-container .small-container img {
     height: 100%;
     width: 100%;
   }
 }
 
 @media (max-width: 660px) {
-  main .sparkle-team-container {
+   .sparkle-team-container {
     margin-top: 138px;
   }
 
-  main .sparkle-team-container h2 {
+   .sparkle-team-container h2 {
     font-size: 24px;
     line-height: 36px;
   }
 
-  main .sparkle-team-container p {
+   .sparkle-team-container p {
     font-size: 14px;
     line-height: 17px;
     margin-top: 29px;
   }
 
-  main .sparkle-team-container .image-container {
+   .sparkle-team-container .image-container {
     margin-top: 80px;
     margin-bottom: 121px;
     gap: 24px;
   }
 
-  main .sparkle-team-container .image-container .small-container {
+   .sparkle-team-container .image-container .small-container {
     max-width: 280px;
     height: 354px;
   }
 
-  main .sparkle-team-container .image-container .small-container div h5 {
+   .sparkle-team-container .image-container .small-container div h5 {
     font-size: 18px;
     line-height: 27px;
   }
 
-  main .sparkle-team-container .image-container .small-container div p {
+   .sparkle-team-container .image-container .small-container div p {
     font-size: 14px;
     line-height: 17px;
   }

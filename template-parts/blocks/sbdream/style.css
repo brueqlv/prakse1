@@ -1,35 +1,35 @@
 @import '../../../webpack/src/scss/variables.css';
 
-main .dream-select-container {
-  margin-top: 122px;
+.dream-select-container {
+  margin-top: 146px;
   width: 95%;
   max-width: 1366px;
 }
 
-main .dream-select-container h3 {
+.dream-select-container h3 {
   font: 500 30px/45px var(--font-2);
   text-align: center;
   color: var(--font-color-two);
   margin-bottom: 60px;
 }
 
-main .dream-select-container .inner-container {
+.dream-select-container .inner-container {
   display: flex;
   justify-content: space-evenly;
 }
 
-main .dream-select-container .inner-container .content div {
+.dream-select-container .inner-container .content div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-main .dream-select-container .inner-container .content .right {
+.dream-select-container .inner-container .content .right {
   margin-top: 30px;
 }
 
-main .dream-select-container .inner-container .content p {
+.dream-select-container .inner-container .content p {
   font: 500 24px/30px var(--font-1);
   text-align: center;
   color: var(--font-color-two);
@@ -38,64 +38,65 @@ main .dream-select-container .inner-container .content p {
 }
 
 @media (max-width: 991px) {
-  main .dream-select-container {
-    margin-top: 95px;
+  .dream-select-container {
+    margin-top: 117px;
   }
 
-  main .dream-select-container .inner-container .content {
+  .dream-select-container .inner-container .content {
     width: 310px;
   }
 
-  main .dream-select-container .inner-container .content div {
+  .dream-select-container .inner-container .content div {
     justify-content: flex-start;
   }
 
-  main .dream-select-container .inner-container .content div img {
+  .dream-select-container .inner-container .content div img {
     height: 100px;
     width: auto;
   }
 
-  main .dream-select-container .inner-container .content div p {
+  .dream-select-container .inner-container .content p {
     font-size: 18px;
     line-height: 22px;
     max-width: 255px;
     margin-top: 25px;
   }
 
-  main .dream-select-container .inner-container .content div .right {
+  .dream-select-container .inner-container .content .right {
     margin-top: 0;
   }
 }
 
 @media (max-width: 660px) {
-  main .dream-select-container {
-    margin-top: 85px;
+  .dream-select-container {
+    margin-top: 114px;
     width: 100%;
   }
 
-  main .dream-select-container h3 {
+  .dream-select-container h3 {
     font-size: 24px;
     line-height: 36px;
     margin-bottom: 72px;
   }
 
-  main .dream-select-container .inner-container {
+  .dream-select-container .inner-container {
     flex-direction: column;
     align-items: center;
+    gap:20px;
   }
 
-  main .dream-select-container .inner-container .content {
+  .dream-select-container .inner-container .content {
     margin-bottom: 44px;
   }
 
-  main .dream-select-container .inner-container .content div p {
+  .dream-select-container .inner-container .content  p {
     font-size: 18px;
     line-height: 22px;
     max-width: 280px;
     margin-top: 24px;
   }
 
-  main .dream-select-container .inner-container .content div .right {
+  .dream-select-container .inner-container .content .right {
     max-height: 80px;
     width: auto;
   }

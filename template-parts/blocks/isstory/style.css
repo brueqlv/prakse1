@@ -49,8 +49,8 @@
   color: var(--font-color-one);
 }
 
-main .story-container {
-  margin-top: 126px;
+.story-container {
+  margin-top: 150px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -58,7 +58,7 @@ main .story-container {
   gap: 14px;
 }
 
-main .story-container .inner-container {
+.story-container .inner-container {
   position: relative;
   width: 160px;
   height: 160px;
@@ -69,7 +69,7 @@ main .story-container .inner-container {
   display: block;
 }
 
-main .story-container .inner-container .background {
+.story-container .inner-container .background {
   position: absolute;
   top: 0;
   left: 0;
@@ -79,7 +79,7 @@ main .story-container .inner-container .background {
   z-index: -1;
 }
 
-main .story-container .inner-container .number {
+.story-container .inner-container .number {
   position: absolute;
   bottom: -5px;
   right: 15px;
@@ -89,7 +89,7 @@ main .story-container .inner-container .number {
   z-index: 1;
 }
 
-main .story-container .inner-container .photo {
+.story-container .inner-container .photo {
   position: absolute;
   top: 0;
   left: 0;
@@ -100,8 +100,8 @@ main .story-container .inner-container .photo {
   opacity: 0.5;
 }
 
-main .story-container .inner-container .name,
-main .story-container .inner-container .surname {
+.story-container .inner-container .name,
+.story-container .inner-container .surname {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -110,15 +110,15 @@ main .story-container .inner-container .surname {
   margin: 0;
 }
 
-main .story-container .inner-container .name {
+.story-container .inner-container .name {
   top: 39%;
 }
 
-main .story-container .inner-container .surname {
+.story-container .inner-container .surname {
   top: 61%;
 }
 
-main .story-container .inner-container .text {
+.story-container .inner-container .text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -130,48 +130,48 @@ main .story-container .inner-container .text {
   margin: 0;
 }
 
-main .story-container .inner-container .video-link {
+.story-container .inner-container .video-link {
   display: none;
 }
 
-main .story-container .inner-container:hover {
+.story-container .inner-container:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
 
-main .story-container .inner-container:hover .name,
-main .story-container .inner-container:hover .surname {
+.story-container .inner-container:hover .name,
+.story-container .inner-container:hover .surname {
   display: block;
   z-index: 2;
 }
 
-main .button-container {
+.button-container {
   display: none;
 }
 
 @media (max-width: 991px) {
-  main .story-container {
-    margin-top: 62px;
+  .story-container {
+    margin-top: 82px;
     max-width: 80%;
     gap: 14px;
   }
 
-  main .story-container .inner-container {
+  .story-container .inner-container {
     width: 142.69px;
     height: 142.69px;
     display: none;
   }
 
-  main .story-container .inner-container:nth-child(-n+20) {
+  .story-container .inner-container:nth-child(-n+20) {
     display: block;
   }
 
-  main .button-container {
+  .button-container {
     display: block;
     margin-top: 50px;
   }
 
-  main .button-container button {
+  .button-container button {
     transition: background-color 0.3s ease, transform 0.3s ease;
     background-color: var(--button-color);
     color: var(--font-color-one);
@@ -185,8 +185,8 @@ main .button-container {
     text-align: center;
   }
 
-  main .button-container button:hover,
-  main .button-container button:focus {
+  .button-container button:hover,
+  .button-container button:focus {
     background-color: var(--button-color-hover);
   }
 }
@@ -197,16 +197,13 @@ main .button-container {
     line-height: 36px;
   }
 
-  main {
-    padding: 20px;
-  }
-
-  main .story-container {
+  .story-container {
     max-width: 100%;
-    gap: 10px;
+    gap: 11px;
+  padding:0 20px;
   }
 
-  main .story-container .inner-container {
+  .story-container .inner-container {
     width: 134.14px;
     height: 134.14px;
   }

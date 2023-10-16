@@ -1,17 +1,17 @@
 @import '../../../webpack/src/scss/variables.css';
 
-main .text-container {
-  margin-top: 172px;
+.text-container {
+  margin: 172px 0 156px 0;
 }
 
-main .text-container h1 {
+.text-container h1 {
   font: 500 48px/71px var(--font-2);
   text-align: center;
   letter-spacing: 0;
   color: var(--font-color-two);
 }
 
-main .text-container p {
+.text-container p {
   font: 400 18px/22px var(--font-1);
   text-align: center;
   color: var(--font-color-two);
@@ -20,35 +20,27 @@ main .text-container p {
 }
 
 @media (max-width: 991px) {
-  main {
-    padding: 0 70px;
-  }
-
-  main .text-container {
+  .text-container {
     margin-top: 135px;
   }
 
-  main .text-container p {
+  .text-container p {
     max-width: 600px;
     margin-top: 50px;
   }
 }
 
 @media (max-width: 660px) {
-  main {
-    padding: 0 20px;
-  }
-
-  main .text-container {
+  .text-container {
     margin-top: 80px;
   }
 
-  main .text-container h1 {
+  .text-container h1 {
     font-size: 36px;
     line-height: 53px;
   }
 
-  main .text-container p {
+  .text-container p {
     font-size: 14px;
     line-height: 17px;
     margin-top: 28px;

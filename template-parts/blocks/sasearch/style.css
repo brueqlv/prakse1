@@ -1,27 +1,27 @@
 @import '../../../webpack/src/scss/variables.css';
 
-main .search-container {
+.search-container {
   width: 100%;
   max-width: 1033px;
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin: 75px 0 218px;
+  margin: 89px 0 218px;
 }
 
-main .search-container .custom-select {
+.search-container .custom-select {
   position: relative;
   width: 288px;
   font-size: 16px;
 }
 
-main .search-container .custom-select label {
-  font: 500 18px/-0.015em var(--font-1);
+.search-container .custom-select label {
+  font: 500 18px var(--font-1);
   text-align: left;
   color: var(--font-color-three);
 }
 
-main .search-container .select-wrapper {
+.search-container .select-wrapper {
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -33,7 +33,7 @@ main .search-container .select-wrapper {
   /* Style the selected value */
 }
 
-main .search-container .select-wrapper .dropdown {
+.search-container .select-wrapper .dropdown {
   list-style: none;
   box-sizing: border-box;
   padding: 5px 0 0 15px;
@@ -49,7 +49,7 @@ main .search-container .select-wrapper .dropdown {
   z-index: 1;
 }
 
-main .search-container .select-wrapper .dropdown li {
+.search-container .select-wrapper .dropdown li {
   font: 400 18px/22px var(--font-1);
   letter-spacing: -0.015em;
   text-align: left;
@@ -57,11 +57,11 @@ main .search-container .select-wrapper .dropdown li {
   margin-bottom: 10px;
 }
 
-main .search-container .select-wrapper .open {
+.search-container .select-wrapper .open {
   display: block;
 }
 
-main .search-container .select-wrapper .selected-value {
+.search-container .select-wrapper .selected-value {
   background: #e9e9e9;
   border-radius: 6px;
   padding: 9px 15px;
@@ -71,7 +71,7 @@ main .search-container .select-wrapper .selected-value {
   color: var(--font-color-two);
 }
 
-main .search-container .select-wrapper .border-line::before {
+.search-container .select-wrapper .border-line::before {
   content: "";
   position: absolute;
   bottom: 2px;
@@ -81,23 +81,23 @@ main .search-container .select-wrapper .border-line::before {
   background-color: var(--background-color-one);
 }
 
-main .search-container .select-wrapper .selected {
+.search-container .select-wrapper .selected {
   font-weight: 600;
 }
 
-main .search-container .select-wrapper .arrow {
+.search-container .select-wrapper .arrow {
   position: absolute;
   top: 50%;
   right: 15px;
   transform: translateY(-50%);
 }
 
-main .search-container .select-wrapper .no-border-radius {
+.search-container .select-wrapper .no-border-radius {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-main .company-container {
+.company-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -106,7 +106,7 @@ main .company-container {
   margin-bottom: 40px;
 }
 
-main .company-container .inner-container {
+.company-container .inner-container {
   justify-content: space-between;
   align-items: center;
   width: 60%;
@@ -114,13 +114,13 @@ main .company-container .inner-container {
   display: none;
 }
 
-main .company-container .inner-container img {
+.company-container .inner-container img {
   width: 120px;
   box-sizing: border-box;
   margin-bottom: 15px;
 }
 
-main .company-container .inner-container h3 {
+.company-container .inner-container h3 {
   font: 500 24px/29px var(--font-1);
   letter-spacing: 0em;
   text-align: left;
@@ -129,8 +129,8 @@ main .company-container .inner-container h3 {
   margin: 0;
 }
 
-main .company-container .inner-container p {
-  font: 400px 18px/22px var(--font-1);
+.company-container .inner-container p {
+  font: 18px/22px var(--font-1);
   letter-spacing: 0em;
   text-align: right;
   color: var(--font-color-two);
@@ -138,19 +138,19 @@ main .company-container .inner-container p {
   margin: 0;
 }
 
-main .company-container .inner-container .type,
-main .company-container .inner-container .city {
+.company-container .inner-container .type,
+.company-container .inner-container .city {
   display: none;
 }
 
-main .map-container {
+.map-container {
   width: 100%;
   max-width: 1383px;
   height: 648px;
   position: relative;
 }
 
-main .map-container .map-inner-container {
+.map-container .map-inner-container {
   position: absolute;
   top: 0;
   left: 0;
@@ -158,42 +158,42 @@ main .map-container .map-inner-container {
   height: 100%;
 }
 
-main .map-container iframe {
+.map-container iframe {
   width: 100%;
   height: 100%;
 }
 
-main .map-container #zoom-in,
-main .map-container #zoom-out {
+.map-container #zoom-in,
+.map-container #zoom-out {
   border: none;
   padding: 0;
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   display: block;
   z-index: 10;
   position: absolute;
-  right: 3%;
+  right: 4.5%;
   cursor: pointer;
   transition: transform 0.2s;
 }
 
-main .map-container #zoom-in img,
-main .map-container #zoom-out img {
+.map-container #zoom-in img,
+.map-container #zoom-out img {
   width: 100%;
   height: 100%;
 }
 
-main .map-container #zoom-in:hover,
-main .map-container #zoom-out:hover {
+.map-container #zoom-in:hover,
+.map-container #zoom-out:hover {
   transform: scale(1.1);
 }
 
-main .map-container #zoom-in {
-  bottom: 20%;
+.map-container #zoom-in {
+  bottom: 26%;
 }
 
-main .map-container #zoom-out {
-  bottom: 10%;
+.map-container #zoom-out {
+  bottom: 14%;
 }
 
 /* Styling for maps custom info field */
@@ -240,85 +240,85 @@ main .map-container #zoom-out {
 }
 
 @media (max-width: 991px) {
-  main .search-container {
-    margin-bottom: 163px;
+  .search-container {
+    margin-bottom: 22px;
   }
 
-  main .company-container {
+  .company-container {
     margin-bottom: 46px;
   }
 
-  main .company-container .inner-container {
+  .company-container .inner-container {
     justify-content: flex-start;
     width: 79%;
     min-height: 120px;
   }
 
-  main .company-container .inner-container div {
+  .company-container .inner-container div {
     margin-left: auto;
   }
 
-  main .company-container .inner-container img {
+  .company-container .inner-container img {
     width: 98px;
     box-sizing: border-box;
     margin-bottom: 15px;
   }
 
-  main .company-container .inner-container h3 {
+  .company-container .inner-container h3 {
     margin-left: 29px;
   }
 
-  main .company-container .inner-container p {
+  .company-container .inner-container p {
     width: auto;
   }
 
-  main .company-container .map-container {
+  .map-container {
     height: 812px;
   }
 
-  main .company-container .map-container #zoom-in,
-  main .company-container .map-container #zoom-out {
+  .map-container #zoom-in,
+  .map-container #zoom-out {
     display: none;
   }
 }
 
 @media (max-width: 660px) {
-  main .search-container {
+  .search-container {
     flex-wrap: wrap;
-    margin-top: 68px;
+    margin-top: 79px;
     margin-bottom: 80px;
     gap: 45px;
   }
 
-  main .search-container .custom-select label {
+  .search-container .custom-select label {
     font-size: 14px;
     line-height: 17px;
   }
 
-  main .search-container .custom-select .select-wrapper {
+  .search-container .custom-select .select-wrapper {
     width: 100%;
     margin-top: 10px;
   }
 
-  main .search-container .custom-select .select-wrapper .selected-value {
+  .search-container .custom-select .select-wrapper .selected-value {
     font-size: 14px;
     line-height: 17px;
   }
 
-  main .search-container .custom-select .select-wrapper ul li {
+  .search-container .custom-select .select-wrapper ul li {
     font-size: 14px;
     line-height: 17px;
   }
 
-  main .search-container .custom-select .select-wrapper .arrow {
+  .search-container .custom-select .select-wrapper .arrow {
     top: 64%;
   }
 
-  main .company-container {
+  .company-container {
     display: none;
   }
 
-  main .map-container {
+  .map-container {
     width: 100vw;
     height: 606px;
   }

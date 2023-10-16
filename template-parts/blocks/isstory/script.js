@@ -1,4 +1,5 @@
 //Function for '99 Iedvesmas stasti' pages small container content display
+
 let innerContainers = document.querySelectorAll('.inner-container');
 
 innerContainers.forEach(container => {
@@ -11,7 +12,6 @@ innerContainers.forEach(container => {
         name.style.display = 'none';
         surname.style.display = 'none';
         text.style.display = 'none';
-
         container.addEventListener('mouseover', () => {
             if (name) {
                 name.style.display = 'block';
@@ -65,7 +65,6 @@ innerContainers.forEach(container => {
 
 const totalContainers = 99;
 const container = document.getElementById('story-container');
-
 const existingContainers = container.querySelectorAll('.inner-container').length;
 const additionalContainersNeeded = totalContainers - existingContainers;
 
@@ -86,14 +85,12 @@ for (let i = 0; i < additionalContainersNeeded; i++) {
             <h4 class="number">${existingContainers + i + 1}</h4>
         `;
     }
-
     container.appendChild(newContainer);
 }
 
-
 //Function for hidding containers on smaller screens
-innerContainers = document.querySelectorAll('.inner-container');
 
+innerContainers = document.querySelectorAll('.inner-container');
 const button = document.querySelector('.load');
 function updateVisibility() {
     const screenWidth = window.innerWidth;
@@ -128,7 +125,6 @@ button.addEventListener('click', function () {
 });
 
 updateVisibility();
-
 window.addEventListener('resize', updateVisibility);
 
 // Function to open the YouTube video in a popup
@@ -137,21 +133,18 @@ function openPopup(videoId, name, surname) {
     const popupName = document.getElementById('popupName');
     const popupSurname = document.getElementById('popupSurname');
     const videoPlayer = document.getElementById('videoPlayer');
-
     const videoUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
 
     popupName.textContent = name;
     popupSurname.textContent = surname;
-
     videoPlayer.src = videoUrl;
-
     popupOverlay.style.display = 'flex';
 }
 
 function closePopup() {
     const popupOverlay = document.getElementById('popupOverlay');
-
     const videoPlayer = document.getElementById('videoPlayer');
+
     videoPlayer.src = '';
     popupOverlay.style.display = 'none';
 }
@@ -160,7 +153,6 @@ innerContainers.forEach((container, index) => {
     const videoLinkElement = container.querySelector('.video-link');
     const nameElement = container.querySelector('.name');
     const surnameElement = container.querySelector('.surname');
-
     const videoLink = videoLinkElement ? videoLinkElement.innerText : '';
     const name = nameElement ? nameElement.innerText : '';
     const surname = surnameElement ? surnameElement.innerText : '';

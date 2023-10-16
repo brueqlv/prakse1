@@ -1,17 +1,17 @@
 @import '../../../webpack/src/scss/variables.css';
 
-main .partners-container {
+ .partners-container {
   position: relative;
   display: flex;
   flex-direction: column;
   padding-bottom: 162px;
-  margin-top: 150px;
+  margin-top: -46px;
   align-items: center;
   width: 100%;
   background: var(--background-color-two);
 }
 
-main .partners-container .wavy-top {
+ .partners-container .wavy-top {
   position: absolute;
   top: -90px;
   left: 0;
@@ -20,7 +20,7 @@ main .partners-container .wavy-top {
   background: url(../../../webpack/src/img/Union.svg) repeat-x;
 }
 
-main .partners-container h2 {
+ .partners-container h2 {
   margin-top: 100px;
   margin-bottom: 63px;
   font: 500 24px/36px var(--font-2);
@@ -28,7 +28,7 @@ main .partners-container h2 {
   color: var(--font-color-two);
 }
 
-main .partners-container .partners-container-inner {
+ .partners-container .partners-container-inner {
   width: 100%;
   max-width: 1366px;
   box-sizing: border-box;
@@ -39,50 +39,51 @@ main .partners-container .partners-container-inner {
   max-height: 120px;
 }
 
-main .partners-container .partners-container-inner div {
+ .partners-container .partners-container-inner div {
   margin: 0 10px;
 }
 
 @media (max-width: 991px) {
-  main .partners-container {
-    margin-top: 105px;
+   .partners-container {
+    margin-top: -80px;
     padding-bottom: 10px;
     height: 310px;
   }
 
-  main .partners-container .wavy-top {
+   .partners-container .wavy-top {
     top: -60px;
   }
 
-  main .partners-container h2 {
+   .partners-container h2 {
     margin-top: 100px;
     margin-bottom: 23px;
   }
 
-  main .partners-container .partners-container-inner {
+   .partners-container .partners-container-inner {
     padding: 0 55px;
   }
 
-  main .partners-container .partners-container-inner div {
+   .partners-container .partners-container-inner div {
     margin: 0 25px;
   }
 }
 
 @media (max-width: 660px) {
-  main .partners-container {
+   .partners-container {
     height: 422px;
+    margin-top:-88px;
   }
 
-  main .partners-container h2 {
+   .partners-container h2 {
     margin-bottom: 58px;
   }
 
-  main .partners-container .partners-container-inner {
+   .partners-container .partners-container-inner {
     flex-wrap: wrap;
     padding: 0 15px;
   }
 
-  main .partners-container .partners-container-inner div {
+   .partners-container .partners-container-inner div {
     flex-basis: calc(50% - 15px);
     display: flex;
     justify-content: center;

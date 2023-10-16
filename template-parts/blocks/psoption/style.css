@@ -1,7 +1,7 @@
 @import '../../../webpack/src/scss/variables.css';
 
-main .option-container {
-  margin: 75px 0 150px 0;
+ .option-container {
+  margin: 98px 0 150px 0;
   padding: 0 90px;
   max-width: 1366px;
   width: 100%;
@@ -10,7 +10,7 @@ main .option-container {
   box-sizing: border-box;
 }
 
-main .option-container .option-inner-container {
+ .option-container .option-inner-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -18,44 +18,44 @@ main .option-container .option-inner-container {
   width: 394px;
 }
 
-main .option-container .option-inner-container div {
+ .option-container .option-inner-container div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-main .option-container .option-inner-container div div {
+ .option-container .option-inner-container div div {
   width: 166.12px;
   height: 192px;
   position: relative;
 }
 
-main .option-container .option-inner-container div div .stars-left {
+ .option-container .option-inner-container div div .stars-left {
   position: absolute;
   top: -5px;
   left: -7px;
   transform: rotateY(180deg);
 }
 
-main .option-container .option-inner-container div div .object-left {
+ .option-container .option-inner-container div div .object-left {
   position: absolute;
   bottom: 0;
   right: 0;
 }
 
-main .option-container .option-inner-container div div .stars-right {
+ .option-container .option-inner-container div div .stars-right {
   position: absolute;
   top: -5px;
   right: -7px;
 }
 
-main .option-container .option-inner-container div div .object-right {
+ .option-container .option-inner-container div div .object-right {
   position: absolute;
   bottom: 0;
   left: 0;
 }
 
-main .option-container .option-inner-container div h3 {
+ .option-container .option-inner-container div h3 {
   font: 500 30px/44px var(--font-2);
   letter-spacing: 0em;
   text-align: center;
@@ -63,7 +63,7 @@ main .option-container .option-inner-container div h3 {
   margin: 53px 0 20px 0;
 }
 
-main .option-container .option-inner-container div p {
+ .option-container .option-inner-container div p {
   font: 400 18px/22px var(--font-1);
   letter-spacing: 0em;
   text-align: center;
@@ -71,7 +71,7 @@ main .option-container .option-inner-container div p {
   margin: 0;
 }
 
-main .option-container .option-inner-container button {
+ .option-container .option-inner-container button {
   transition: background-color 0.3s ease, transform 0.3s ease;
   background-color: var(--button-color);
   color: var(--font-color-one);
@@ -85,28 +85,28 @@ main .option-container .option-inner-container button {
   margin-top: 50px;
 }
 
-main .option-container .option-inner-container button:hover,
-main .option-container .option-inner-container button:focus {
+ .option-container .option-inner-container button:hover,
+ .option-container .option-inner-container button:focus {
   background-color: var(--button-color-hover);
 }
 
-main .option-container .left {
+ .option-container .left {
   margin-right: 40px;
 }
 
-main .option-container .right {
+ .option-container .right {
   margin-left: 40px;
 }
 
 @media (max-width: 991px) {
-  main .option-container {
-    margin: 75px 0 150px 0;
+   .option-container {
+    margin: 94px 0 150px 0;
     flex-wrap: wrap;
     box-sizing: border-box;
     padding: 0px;
   }
 
-  main .option-container .option-inner-container {
+   .option-container .option-inner-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -114,60 +114,65 @@ main .option-container .right {
     width: 100%;
   }
 
-  main .option-container .option-inner-container div h3 {
+   .option-container .option-inner-container div h3 {
     margin: 53px 0 23px 0;
   }
 
-  main .option-container .option-inner-container button {
+  .option-container .option-inner-container div p {
+    max-width: 605px;
+  }
+
+   .option-container .option-inner-container button {
     margin-top: 55px;
   }
 
-  main .option-container .left {
+   .option-container .left {
     margin-right: 0px;
   }
 
-  main .option-container .right {
+   .option-container .right {
     margin-left: 0px;
   }
 
-  main .option-container .left {
+   .option-container .left {
     margin-bottom: 160px;
   }
 }
 
 @media (max-width: 660px) {
-  main .option-container {
-    margin: 75px 0 120px 0;
+   .option-container {
+    margin: 88px 0 120px 0;
   }
 
-  main .option-container .option-inner-container div h3 {
+   .option-container .option-inner-container div h3 {
     margin: 28px 0 13px 0;
     font-size: 18px;
     line-height: 27px;
   }
 
-  main .option-container .option-inner-container div p {
+   .option-container .option-inner-container div p {
     font-size: 12px;
     line-height: 15px;
+    max-width:275px;
   }
 
-  main .option-container .option-inner-container div div .stars-right {
+   .option-container .option-inner-container div div .stars-right {
     position: absolute;
     top: 1px;
     right: -20px;
   }
 
-  main .option-container .option-inner-container div div .object-right {
+   .option-container .option-inner-container div div .object-right {
     position: absolute;
     bottom: 0;
     left: 18px;
   }
 
-  main .option-container .option-inner-container button {
+   .option-container .option-inner-container button {
     margin-top: 55px;
   }
 
-  main .option-container .left {
+   .option-container .left {
     margin-bottom: 75px;
   }
 }

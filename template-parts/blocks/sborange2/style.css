@@ -1,13 +1,13 @@
 @import '../../../webpack/src/scss/variables.css';
 
-main .orange-container {
+ .orange-container1 {
   position: relative;
   width: 100%;
   max-width: 1366px;
-  margin-top: 130px;
+  margin-top: 151px;
 }
 
-main .orange-container .background {
+ .orange-container1 .background {
   position: absolute;
   top: 0;
   left: 0;
@@ -18,7 +18,7 @@ main .orange-container .background {
   z-index: 1;
 }
 
-main .orange-container .content {
+ .orange-container1 .content {
   position: relative;
   z-index: 1;
   display: flex;
@@ -26,56 +26,60 @@ main .orange-container .content {
   align-items: center;
 }
 
-main .orange-container .content .img-container1 {
+ .orange-container1 .content .img-container1 {
   position: relative;
-  margin-top: 73px;
-  margin-right: 70px;
-  max-width: 370px;
+  margin-top: 77px;
+  margin-right:30px;
+  max-width: 400px;
 }
 
-main .orange-container .content p {
+ .orange-container1 .content p {
   font: 500 24px/30px var(--font-1);
   text-align: center;
   color: var(--font-color-one);
-  max-width: 1030px;
+  max-width: 950px;
   margin: 35px 0 100px 0;
 }
 
 @media (max-width: 991px) {
-  main .second-orange-container {
+   .orange-container1 {
     margin-top: 140px;
   }
 
-  main .second-orange-container .background {
+   .orange-container1 .background {
     height: 90%;
   }
 
-  main .orange-container .content p {
+  .orange-container1 .content .img-container1 {
+    margin-top: 93px;
+  }
+
+   .orange-container1 .content p {
     width: 80%;
   }
 }
 
 @media (max-width: 660px) {
-  main .orange-container {
-    margin-top: 43px;
+   .orange-container1 {
+    margin-top: 60px;
   }
 
-  main .second-orange-container .background {
+   .orange-container1 .background {
     height: 100%;
   }
 
-  main .orange-container .content .img-container1 {
+   .orange-container1 .content .img-container1 {
     margin-top: 92px;
     margin-right: 0;
   }
 
-  main .orange-container .content .img-container1 img {
+   .orange-container1 .content .img-container1 img {
     height: 190px;
     max-height: 179px;
     width: auto;
   }
 
-  main .orange-container .content p {
+   .orange-container1 .content p {
     font-size: 18px;
     line-height: 22px;
     margin-top: 20px;

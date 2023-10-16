@@ -1,4 +1,6 @@
 <?php
+//Option block for page "Piesaki Sapni"
+
 $optionLeft = get_field('option_container')['left'];
 $leftImage = $optionLeft['image'];
 $leftDecor = $optionLeft['decor'];
@@ -6,7 +8,7 @@ $optionRight = get_field('option_container')['right'];
 $rightImage = $optionRight['image'];
 $rightDecor = $optionRight['decor'];
 ?>
-<main>
+
 <div class="option-container">
     <div class="option-inner-container left">
         <div>
@@ -31,4 +33,3 @@ $rightDecor = $optionRight['decor'];
         <button><?php echo esc_html($optionRight['button_text']); ?></button>
     </div>
 </div>
-</main>

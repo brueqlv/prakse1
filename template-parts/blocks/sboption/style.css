@@ -1,7 +1,7 @@
 @import '../../../webpack/src/scss/variables.css';
 
-main .option-container {
-  margin: 130px 0 185px 0;
+.option-container {
+  margin: 155px 0 185px 0;
   padding: 0 90px;
   max-width: 1366px;
   width: 100%;
@@ -11,7 +11,7 @@ main .option-container {
   box-sizing: border-box;
 }
 
-main .option-container div {
+.option-container div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -19,14 +19,14 @@ main .option-container div {
   width: 400px;
 }
 
-main .option-container div button,
-main .option-container div h3 {
+.option-container div button,
+.option-container div h3 {
   font: 500 24px/36px var(--font-2);
   text-align: center;
   color: var(--font-color-two);
 }
 
-main .option-container div button {
+.option-container div button {
   transition: background-color 0.3s ease, transform 0.3s ease;
   background-color: var(--button-color);
   color: var(--font-color-one);
@@ -37,27 +37,27 @@ main .option-container div button {
   height: 50px;
   border-radius: 25px;
   font: 18px/22px var(--font-1);
-  margin-top: 20px;
+  margin-top: 43px;
 }
 
-main .option-container div button:hover,
-main .option-container div button:focus {
+.option-container div button:hover,
+.option-container div button:focus {
   background-color: var(--button-color-hover);
 }
 
 @media (max-width: 991px) {
-  main .option-container {
+  .option-container {
     margin: 93px 0 170px 0;
     align-items: flex-start;
     padding: 0;
   }
 
-  main .option-container div {
+  .option-container div {
     min-height: 150px;
     width: 360px;
   }
 
-  main .option-container div h3 {
+  .option-container div h3 {
     font-size: 18px;
     line-height: 27px;
     max-width: 233px;
@@ -66,26 +66,26 @@ main .option-container div button:focus {
 }
 
 @media (max-width: 660px) {
-  main .option-container {
+  .option-container {
     flex-direction: column;
     align-items: center;
-    margin-top: 102px;
+    margin-top: 106px;
     margin-bottom: 72px;
   }
 
-  main .option-container div {
+  .option-container div {
     justify-content: flex-start;
     height: 150px;
     margin-bottom: 60px;
     width: 90%;
   }
 
-  main .option-container div h3 {
+  .option-container div h3 {
     line-height: 27px;
     max-width: 100%;
   }
 
-  main .option-container div button {
-    margin-top: 30px;
+  .option-container div button {
+    margin-top: 53px;
   }
 }

@@ -13,6 +13,7 @@ header .header-container {
   position: fixed;
   overflow: hidden;
   top: 0;
+  left:0;
 }
 
 header .header-container .header-container-inner {
@@ -140,7 +141,7 @@ header .header-container .header-container-inner .language-navbar {
   header .header-container .header-container-inner div .fa-bars {
     display: block;
     color: var(--icon-color-one);
-    padding: 0px 12px 28px 0px;
+    padding: 6px 20px 28px 0px;
     font-size: 32px;
   }
 
@@ -169,13 +170,13 @@ header .header-container .header-container-inner .language-navbar {
   }
 
   header .header-container .header-container-inner div .fa-close {
-    padding: 16px 17px 2px;
+    padding: 6px 20px 2px;
     font-size: 32px;
   }
 
   header .header-container .header-container-inner div .fa-bars {
     display: block;
-    padding: 16px 17px 2px;
+    padding: 6px 20px 2px;
     font-size: 32px;
   }
 

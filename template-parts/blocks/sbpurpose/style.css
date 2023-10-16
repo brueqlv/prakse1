@@ -1,14 +1,14 @@
 @import '../../../webpack/src/scss/variables.css';
 
-main .purpose-container {
+.purpose-container {
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 1040px;
-  margin-top: 100px;
+  margin-top: 137px;
 }
 
-main .purpose-container h3 {
+.purpose-container h3 {
   font: 500 30px/75px var(--font-2);
   text-align: center;
   letter-spacing: 0;
@@ -16,7 +16,7 @@ main .purpose-container h3 {
   margin-bottom: 75px;
 }
 
-main .purpose-container .inner-container {
+.purpose-container .inner-container {
   display: flex;
   align-self: flex-end;
   align-items: end;
@@ -24,12 +24,12 @@ main .purpose-container .inner-container {
   margin-right: 10.6%;
 }
 
-main .purpose-container .inner-container img {
+.purpose-container .inner-container img {
   max-width: 150px;
   margin: 0 65px 0 0;
 }
 
-main .purpose-container .inner-container p {
+.purpose-container .inner-container p {
   font: 400 18px/22px var(--font-1);
   text-align: left;
   max-width: 500px;
@@ -37,45 +37,45 @@ main .purpose-container .inner-container p {
   margin-bottom: 30px;
 }
 
-main .purpose-container .inner-container:nth-child(odd) {
+.purpose-container .inner-container:nth-child(odd) {
   align-self: flex-start;
   margin-bottom: 116px;
 }
 
-main .purpose-container .inner-container:nth-child(odd) img {
+.purpose-container .inner-container:nth-child(odd) img {
   margin: 0 0 0 65px;
 }
 
-main .purpose-container .inner-container:nth-child(odd) p {
+.purpose-container .inner-container:nth-child(odd) p {
   text-align: right;
   margin-bottom: 20px;
   letter-spacing: 0;
 }
 
 @media (max-width: 991px) {
-  main .purpose-container .inner-container {
+  .purpose-container .inner-container {
     align-items: start;
     margin-bottom: 72px;
   }
 
-  main .purpose-container .inner-container img {
+  .purpose-container .inner-container img {
     margin: 0 70px 0 0;
   }
 
-  main .purpose-container .inner-container p {
+  .purpose-container .inner-container p {
     max-width: 353px;
     margin-top: 8px;
   }
 
-  main .purpose-container .inner-container:nth-child(odd) {
+  .purpose-container .inner-container:nth-child(odd) {
     margin: 0 0 90px 10.6%;
   }
 
-  main .purpose-container .inner-container:nth-child(odd) img {
+  .purpose-container .inner-container:nth-child(odd) img {
     margin: 0 0 0 65px;
   }
 
-  main .purpose-container .inner-container:nth-child(odd) p {
+  .purpose-container .inner-container:nth-child(odd) p {
     text-align: right;
     margin-bottom: 20px;
     letter-spacing: 0;
@@ -83,18 +83,18 @@ main .purpose-container .inner-container:nth-child(odd) p {
 }
 
 @media (max-width: 660px) {
-  main .purpose-container {
-    margin-top: 90px;
+  .purpose-container {
+    margin-top: 120px;
     align-items: center;
   }
 
-  main .purpose-container h3 {
+  .purpose-container h3 {
     font-size: 24px;
     line-height: 36px;
     margin-bottom: 45px;
   }
 
-  main .purpose-container .inner-container {
+  .purpose-container .inner-container {
     margin: 0;
     flex-direction: column;
     align-items: center;
@@ -103,29 +103,30 @@ main .purpose-container .inner-container:nth-child(odd) p {
     margin-bottom: 22px;
   }
 
-  main .purpose-container .inner-container img {
+  .purpose-container .inner-container img {
     transform: scale(0.8);
     margin: 0;
   }
 
-  main .purpose-container .inner-container p {
+  .purpose-container .inner-container p {
     font-size: 12px;
     line-height: 15px;
     text-align: center;
     margin-top: 10px;
   }
 
-  main .purpose-container .inner-container:nth-child(odd) {
+  .purpose-container .inner-container:nth-child(odd) {
     margin: 0;
     align-self: auto;
     margin-bottom: 40px;
+    flex-direction: column-reverse;
   }
 
-  main .purpose-container .inner-container:nth-child(odd) img {
+  .purpose-container .inner-container:nth-child(odd) img {
     margin: 0;
   }
 
-  main .purpose-container .inner-container:nth-child(odd) p {
+  .purpose-container .inner-container:nth-child(odd) p {
     text-align: center;
   }
 }

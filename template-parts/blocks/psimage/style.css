@@ -1,13 +1,14 @@
 @import '../../../webpack/src/scss/variables.css';
 
-main .img-container {
+ .img-container {
   position: relative;
   overflow: hidden;
   display: flex;
   align-items: flex-end;
+  margin-bottom:179px;
 }
 
-main .img-container .ripped {
+ .img-container .ripped {
   position: absolute;
   background-color: transparent;
   z-index: 1;
@@ -16,61 +17,63 @@ main .img-container .ripped {
   height: 55px;
 }
 
-main .img-container .top {
+ .img-container .top {
   top: 0;
   transform: rotateY(180deg);
 }
 
-main .img-container .bottom {
+ .img-container .bottom {
   bottom: -1px;
 }
 
-main .img-container div {
+ .img-container div {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 
-main .img-container img {
+ .img-container img {
   width: 100%;
 }
 
 @media (max-width: 991px) {
-  main .img-container {
+   .img-container {
     width: 100vw;
+    margin-bottom: 165px;
   }
 
-  main .img-container .ripped {
+   .img-container .ripped {
     height: 35px;
   }
 }
 
 @media (max-width: 660px) {
-  main .img-container {
+   .img-container {
     flex-wrap: wrap;
     overflow: hidden;
     align-items: baseline;
+    margin-bottom: 107px;
   }
 
-  main .img-container .bottom {
+   .img-container .bottom {
     transform: rotateY(180deg);
     height: 50px;
   }
 
-  main .img-container .img-container-inner:nth-child(4) {
+   .img-container .img-container-inner:nth-child(4) {
     width: 38.4%;
   }
 
-  main .img-container .img-container-inner:nth-child(5) {
+   .img-container .img-container-inner:nth-child(5) {
     width: 61.6%;
   }
 
-  main .img-container .img-container-inner:nth-child(2) {
+   .img-container .img-container-inner:nth-child(2) {
     width: 50%;
     order: 4;
   }
 
-  main .img-container .img-container-inner:nth-child(3) {
+   .img-container .img-container-inner:nth-child(3) {
     width: 50%;
     order: 5;
     align-self: flex-start;

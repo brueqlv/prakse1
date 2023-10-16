@@ -2,7 +2,7 @@
 
 function pdgc_acf_blocks() {
 	pdg_add_acf_block( 'Header', true, true);
-	pdg_add_acf_block( 'Footer', true, true);
+	pdg_add_acf_block( 'Footer', true);
 	pdg_add_acf_block( 'hpVideo', true, true);
 	pdg_add_acf_block( 'hpText', true);
 	pdg_add_acf_block( 'hpImage', true);

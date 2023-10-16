@@ -7,7 +7,9 @@
 <?php endif; ?>
 
 <div class="editor">
-    <?php the_content(); ?>
+
+        <?php the_content(); ?>
+
 </div>
 
 <?php get_footer(); ?>
